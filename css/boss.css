@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    position: relative;
+    height: 100%;
+    width: calc(100vh * 16 / 9);
+}
+
+li {
+    list-style: none;
+}
+
+h4 {
+    color: #ff00ea;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.boss {
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url("../img/boss/sshengyuan1.png") no-repeat center center;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
+}
+
+.roles {
+    position: absolute;
+    bottom: calc(100vh * 17 / 63);
+    left: calc(100% * 163 / 260);
+    width: calc(100% * 75 / 255);
+    height: calc(100vh * 25 / 126);
+}
+
+.role {
+    width: calc(100%/3);
+    height: calc(100vh * 25 / 126);
+    float: left;
+}
+
+.role img {
+    width: 100%;
+    height: calc(100vh * 25 / 126);
+    border-radius: 50%;
+}
+
+.boss .skill {
+    list-style: none;
+    height: 100px;
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+}
+
+.boss .skill li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100px;
+    float: left;
+    width: 33%;
+}
+
+.boss .skill li p {
+    position: relative;
+    width: 25%;
+    float: left;
+    margin-right: calc((100% - 120px) / 4);
+    /*line-height: 40px;*/
+    text-align: center;
+    /*height: 40px;*/
+    background: radial-gradient(circle, rgba(255, 5, 0, 0.7), rgba(14, 69, 255, 0.7));
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 255, 0.54) 0 0 3px 4px;
+}
+
+#fight {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    height: 100px;
+    width: 100px;
+}

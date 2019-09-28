@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 1080px;
+    height: 720px;
+    position: relative;
+    margin: 0 auto;
+}
+
+table .boss{
+    background: url("../img/fgo小表情/boss杀生院.jpg") no-repeat;
+    background-size: 120px;
+}
+
+table .roleHome{
+    background: url("../img/零散图片/角色替换.jpg") no-repeat;
+}
+
+
+
+table {
+    width: 1080px;
+    height: 720px;
+    margin: 0 auto;
+    position: relative;
+    /*消除td之间的间距*/
+    border-right: 1px solid #804040;
+    border-bottom: 1px solid #804040;
+    border-collapse: collapse;
+}
+
+table td {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    overflow: hidden;
+    border-left: 1px solid #804040;
+    transform-style: preserve-3d;
+    vertical-align: top;
+    border-top: 1px solid #804040;
+}
+
+table td .move img {
+    width: 120px;
+    height: 120px;
+}
+
+table td .move{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    top:600px;
+    left: 480px;
+    /*transform: scale(1.1)rotate3d(0,0,1,30deg);*/
+    animation: move both 2s infinite;
+    z-index: 999;
+}

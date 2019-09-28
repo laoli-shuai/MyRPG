@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+#roleHome{
+    width: 1080px;
+    height: 720px;
+    margin: 0 auto;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#roleHome ul,#roleHome ol{
+    width: 1080px;
+    height: 600px;
+    float: left;
+}
+
+
+#roleHome li{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    background-size:120px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 5px 5px 5px 3px #1a77ff;
+}
+#roleHome button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 4;
+    position: absolute;
+}
+
+#roleHome  ul>li>div{
+    position: absolute;
+    width: 2000px;
+    height: 1000px;
+    display: none;
+    background-color: #fffadd;
+    offset-position: 0 0 ;
+    overflow: auto;
+    z-index: 5;
+}
+
+#roleHome  ul>li>div>p{
+    text-indent: 300px;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+
+/*控制没有选中角色是不显示替换按钮*/
+.hidden_{
+    display: none;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 20px;
+    color: gold;
+}
+
+.message,.role{
+    width: 350px;
+    float: left;
+    font-size: 0;
+}
+.message>p{
+    font-size: 16px;
+}
